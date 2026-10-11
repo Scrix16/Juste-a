@@ -1,0 +1,8 @@
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+# Générés par xcodegen depuis project.yml
+*.xcodeproj
+JusteA/Info.plist
+JusteA/JusteA.entitlements

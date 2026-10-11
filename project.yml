@@ -1,0 +1,45 @@
+# Source de vérité du projet Xcode : lancer `xcodegen` pour générer JusteA.xcodeproj
+name: JusteA
+options:
+  bundleIdPrefix: com.scrix16
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_IDENTITY: "-" # signature locale : pas besoin de compte développeur
+targets:
+  JusteA:
+    type: application
+    platform: macOS
+    sources: [JusteA]
+    info:
+      path: JusteA/Info.plist
+      properties:
+        CFBundleDisplayName: Juste-a
+        LSUIElement: true # vit dans la barre de menu, pas dans le Dock
+        NSCalendarsFullAccessUsageDescription: Juste-a affiche ton agenda du jour.
+    entitlements:
+      path: JusteA/JusteA.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.personal-information.calendars: true
+        com.apple.security.network.client: true
+  JusteATests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [JusteATests]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: JusteA
+schemes:
+  JusteA:
+    build:
+      targets:
+        JusteA: all
+    test:
+      targets: [JusteATests]
