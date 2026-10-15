@@ -6,3 +6,5 @@ xcuserdata/
 *.xcodeproj
 JusteA/Info.plist
 JusteA/JusteA.entitlements
+.agents/
+skills-lock.json
