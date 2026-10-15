@@ -1,0 +1,103 @@
+{
+  "data": [
+    {
+      "id": 3488,
+      "name": "Presentation Brochure",
+      "schoolYear": 2026,
+      "startDate": "2026-10-12T04:42:00.000Z",
+      "endDate": "2026-10-25T19:42:00.000Z",
+      "endRegistrationDate": "2026-10-25T19:42:00.000Z",
+      "forceRegistration": false,
+      "isUserRegistered": true,
+      "registrationsCount": 18,
+      "description": "",
+      "registrations": [
+        {
+          "id": 1,
+          "groupName": "Etudiant Anonyme",
+          "leaderLogin": "",
+          "members": [
+            {
+              "id": 1,
+              "login": "",
+              "status": "accepted"
+            }
+          ]
+        }
+      ],
+      "unitInstance": {
+        "id": 2520,
+        "schoolYear": 2026,
+        "code": "RUN-1",
+        "unitCode": "G-PRO-510",
+        "name": "G3 - Professional Communication",
+        "timezone": "Indian/Reunion",
+        "startDate": "2026-08-30T20:00:00.000Z",
+        "endDate": "2027-01-16T20:00:00.000Z",
+        "endRegistrationDate": "2026-09-26T20:00:00.000Z",
+        "description": "",
+        "responsibles": []
+      }
+    },
+    {
+      "id": 4025,
+      "name": "MyTorch",
+      "schoolYear": 2026,
+      "startDate": "2026-10-11T20:00:00.000Z",
+      "endDate": "2026-11-08T19:42:00.000Z",
+      "endRegistrationDate": "2026-10-18T19:42:00.000Z",
+      "forceRegistration": false,
+      "isUserRegistered": false,
+      "registrationsCount": 4,
+      "description": "",
+      "registrations": [],
+      "unitInstance": {
+        "id": 2806,
+        "schoolYear": 2026,
+        "code": "RUN-1",
+        "unitCode": "G-CNA-501",
+        "name": "G3 - Computational Learning Systems",
+        "timezone": "Indian/Reunion",
+        "startDate": "2026-08-30T20:00:00.000Z",
+        "endDate": "2026-11-07T20:00:00.000Z",
+        "endRegistrationDate": "2026-10-17T20:00:00.000Z",
+        "description": "",
+        "responsibles": []
+      }
+    },
+    {
+      "id": 4115,
+      "name": "my_PGP",
+      "schoolYear": 2026,
+      "startDate": "2026-09-20T20:00:00.000Z",
+      "endDate": "2026-10-18T19:42:00.000Z",
+      "endRegistrationDate": "2026-09-27T19:42:00.000Z",
+      "forceRegistration": false,
+      "isUserRegistered": false,
+      "registrationsCount": 11,
+      "description": "",
+      "registrations": [],
+      "unitInstance": {
+        "id": 2866,
+        "schoolYear": 2026,
+        "code": "RUN-1",
+        "unitCode": "G-CNA-500",
+        "name": "G3 - Applied Cryptographic Mathematics",
+        "timezone": "Indian/Reunion",
+        "startDate": "2026-08-30T20:00:00.000Z",
+        "endDate": "2026-10-17T20:00:00.000Z",
+        "endRegistrationDate": "2026-09-26T20:00:00.000Z",
+        "description": "",
+        "responsibles": []
+      }
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "limit": 50,
+    "total": 3,
+    "pages": 1,
+    "hasNext": false,
+    "hasPrev": false
+  }
+}
