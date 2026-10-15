@@ -19,7 +19,6 @@ targets:
       path: JusteA/Info.plist
       properties:
         CFBundleDisplayName: Juste-a
-        LSUIElement: true # vit dans la barre de menu, pas dans le Dock
         NSCalendarsFullAccessUsageDescription: Juste-a affiche ton agenda du jour.
     entitlements:
       path: JusteA/JusteA.entitlements

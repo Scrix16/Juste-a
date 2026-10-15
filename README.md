@@ -1,6 +1,6 @@
 # Juste-a
 
-Le tableau de bord de ta journée, dans la barre de menu de ton Mac.
+Le tableau de bord de ta journée sur Mac : une fenêtre complète, plus un accès rapide depuis la barre de menu.
 Agenda, tâches et (bientôt) mails, musique et bilans quotidiens générés par IA, au même endroit.
 
 > Application native SwiftUI : pas d'Electron, pas de navigateur embarqué. Elle tourne en fond sans peser sur ton Mac.
@@ -30,7 +30,7 @@ xcodegen              # génère JusteA.xcodeproj depuis project.yml
 open JusteA.xcodeproj # puis ⌘R
 ```
 
-Au premier lancement, macOS demande l'accès au calendrier. L'icône ☀️ apparaît dans la barre de menu.
+Au premier lancement, macOS demande l'accès au calendrier. Le tableau de bord s'ouvre, et l'icône ☀️ dans la barre de menu permet d'y revenir à tout moment.
 
 **Ajouter un agenda (Google, Epitech…)** : ajoute-le dans l'app Calendrier de macOS (compte Google, ou *Fichier › Nouvel abonnement* pour une URL `.ics`). Juste-a le voit automatiquement.
 
@@ -40,8 +40,10 @@ Tout passe par un seul endroit : les données de chaque source arrivent dans le 
 
 ```
 JusteA/
-├── JusteAApp.swift        point d'entrée, icône de la barre de menu
-├── DashboardView.swift    l'écran principal
+├── JusteAApp.swift        point d'entrée : fenêtre et barre de menu, données partagées
+├── DashboardView.swift    la fenêtre du tableau de bord
+├── MenuBarView.swift      la vue rapide de la barre de menu
+├── Widgets.swift          les cartes et listes communes aux deux vues
 ├── CalendarService.swift  agenda via EventKit
 └── TodoItem.swift         modèle de tâche (SwiftData)
 JusteATests/               tests unitaires
